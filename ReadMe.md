@@ -1,11 +1,11 @@
 This readme is a step-by-step guide that will allow you to install the Zephyr environment on your computer and quickly run an application or sample code. In our case, we will use GitBash as the command terminal for installing and compiling our future Zephyr projects.\
 It is divided into the following parts:
 
-- Software installation required
-- Proxy Setting
-- Zephyr installation
-- Zephyr Repository Architecture
-- Run an example project
+- 1- Software installation required
+- 2- Proxy Setting
+- 3- Zephyr installation
+- 4- Zephyr Repository Architecture
+- 5- Run an example project
 
 This guide was written, among other things, thanks to the Zephyr **[Getting Started Guide](https://docs.zephyrproject.org/latest/develop/getting_started/index.html)**.
 
@@ -16,7 +16,7 @@ This guide was written, among other things, thanks to the Zephyr **[Getting Star
 _______________________________________________________________
 
 
-# Software installation required
+# 1- Software installation required
 
 To be able to install your Zephyr environment, please **Download & Install** the following dependencies needed & **Add it to PATH** if it is not automatically did during installation. All the installation files are available in the `Zephyr_Startup\installation_files` folder. Please follow these steps:
 
@@ -44,7 +44,7 @@ To be able to install your Zephyr environment, please **Download & Install** the
 _______________________________________________________________
 
 
-# Proxy Setting
+# 2- Proxy Setting
 
 To install our Zephyr environment, we will need to access remote servers. We must therefore configure the proxy with our username and password to be able to access them.\
 To do this, after installing **Git Bash**, you should find in the path `C:\Users\my_user_name` the file `.bashrc`. This is a script of the Bash command interpreter that Bash executes each time it is started interactively.\
@@ -116,7 +116,7 @@ proxyon
 _______________________________________________________________
 
 
-# Zephyr installation
+# 3- Zephyr installation
 
 ### Creating of the Zephyr Repository
 
@@ -203,7 +203,7 @@ If asked, answer ```Y``` to *host tools*, ```Y``` to *Zephyr SDK Cmake package*,
 _______________________________________________________________
 
 
-# Zephyr Repository Architecture
+# 4- Zephyr Repository Architecture
 
 This is a simplified representation of the Zephyr repository architecture:
 
@@ -260,7 +260,7 @@ zephyrproject/                       //WORKSPACE
 _______________________________________________________________
 
 
-# Run an example project
+# 5- Run an example project
 
 > [!NOTE]  
 >If you are following this tutorial from the beginning you can skip the first steps. Go directly to step 3.
