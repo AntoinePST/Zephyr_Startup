@@ -1,6 +1,6 @@
 {
     "title": "Zephyr Startup",
-    "githubLoc": "https://raw.githubusercontent.com/stm32_Zephyr/master",
+    "githubLoc": "https://raw.githubusercontent.com/Zephyr_Startup/master",
     "options": {
       "allowMenu": true,
       "allowTagSelect": false
