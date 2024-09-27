@@ -11,9 +11,14 @@ This guide was written, among other things, thanks to the Zephyr **[Getting Star
 > [!NOTE]
 > Last update October 2024.
 
+
+_______________________________________________________________
+
+
 # Software installation required
 
-To be able to install your Zephyr environment, please **Download & Install** the following dependencies needed & **Add it to PATH** if it is not automatically did during installation. All the installation files are available in the `Zephyr_Tools\installation_files` folder. Please follow these steps:
+To be able to install your Zephyr environment, please **Download & Install** the following dependencies needed & **Add it to PATH** if it is not automatically did during installation. All the installation files are available in the `Zephyr_Startup\installation_files` folder. Please follow these steps:
+
 
 ###### GitBash
   - Launch *Git-2.46.1-64-bit.exe* and let all default settings.
@@ -25,7 +30,7 @@ To be able to install your Zephyr environment, please **Download & Install** the
 
 ###### Cmake
 - Launch *cmake-3.30.0-windows-x86_64.msi*
-- During installation, check  `Add CMake to the PATH environment variable`)
+- During installation, check  `Add CMake to the PATH environment variable`
 
 ###### Wget
 - Extract the wget zip folder to `C:/wget-1.21.4-win64/`
@@ -34,7 +39,9 @@ To be able to install your Zephyr environment, please **Download & Install** the
 ###### 7zip
 - Launch *7z2408-x64.exe*
 
+
 _______________________________________________________________
+
 
 # Proxy Setting
 
@@ -86,12 +93,12 @@ cd c:
 > [!WARNING]
 > Depending on your geographic region, you may need to change the value of the *ProxyIP* parameter on line 6 with a suitable Proxy IP.
 
+
 In order to verify that your modification works properly, open a GitBash terminal and you should see the following text appear at the top of the terminal:
 > Proxy activation
->
 > $ proxyon
->
 > $ proxyoff
+
 
 You just have to type the following command line and enter your username and password:
 
@@ -104,9 +111,12 @@ proxyon
 > [!IMPORTANT]  
 > At the end of a Git Bash session, remember to do a `proxyoff` command to clear your login and password that have been temporarily stored by the *.bashrc* script.
 
+
 _______________________________________________________________
 
+
 # Zephyr installation
+
 ### Creating of the Zephyr Repository
 
 First, start by creating a repository for your Zephyr environment. For my part, it will be `C:/Zephyr_Repo`. Then, change directory to this specific location. You can do that with the following command line:
@@ -117,9 +127,10 @@ cd Zephyr_Repo
 ```
 ![gif](./img/zephyr_repo.gif)
 
+
 ### Configuring the Zephyr Environment
 
-In this part you will find a series of commands needed to configure the Zephyr environment. Before each command line you will find a description sentence briefly explaining what the command is for.
+In this part you will find a series of commands needed to configure the Zephyr environment. Before each command line you will find a little description of the command.
 
 In a *zephyrproject* folder, create a python environment, it will generate a folder *env-st*:
 ```shell
@@ -146,7 +157,7 @@ Move to your project location:
 cd zephyrproject
 ```
 
-Get the Zephyr source code: (this may take a while):
+Get the Zephyr source code (this may take a while):
 ```shell
 west update
 ```
@@ -161,11 +172,14 @@ Install more python tools for Zephyr:
 pip install -r zephyr/scripts/requirements.txt
 ```
 
+
 ### Install the Zephyr SDK
+
 The **Zephyr Software Development Kit (SDK)** contains toolchains for each of Zephyr’s supported architectures, which include a compiler, assembler, linker and other programs required to build Zephyr applications.\
 It also contains additional host tools, such as custom QEMU and OpenOCD builds that are used to emulate, flash and debug Zephyr applications.
 
-Download and unzip the **[Zephyr SDK](https://github.com/zephyrproject-rtos/sdk-ng/releases/tag/v0.16.8)**. in your Zephyr Repository folder destination.
+Download and unzip the **[Zephyr SDK](https://github.com/zephyrproject-rtos/sdk-ng/releases/tag/v0.16.8)** in your Zephyr Repository folder destination.
+
 
 Move to the *zephyr-sdk-0.16.8* folder that you just unzipped:
 ```shell
@@ -184,7 +198,9 @@ If asked, answer ```Y``` to *host tools*, ```Y``` to *Zephyr SDK Cmake package*,
 > [!TIP]
 > If you want to create another zephyr project, you just need to go back to this guide at the **Configuring the Zephyr Environment** part.
 
+
 _______________________________________________________________
+
 
 # Zephyr Repository Architecture
 
@@ -214,31 +230,34 @@ zephyrproject/                       //WORKSPACE
    ├─── modules/
    ├─── tools/
    └──── zephyr/                      //Zephyr repository application
-	    ├── arch/                       //STM32 core handling related code
-	    ├── boards/                     //all supported board config
-	    ├── cmake/                      //cmake common script
+	    ├── arch/                     //STM32 core handling related code
+	    ├── boards/                   //all supported board config
+	    ├── cmake/                    //cmake common script
 	    ├── doc/
-	    ├── drivers/                    //Zephyr drivers
-	    ├── dts/                        //device tree for SoCs
+	    ├── drivers/                  //Zephyr drivers
+	    ├── dts/                      //device tree for SoCs
 	    ├── include/
-	    ├── kernel/                     //kernel code
-	    ├── lib/                        //built in libraries
+	    ├── kernel/                   //kernel code
+	    ├── lib/                      //built in libraries
 	    ├── misc/
-	    ├── modules/                    //Kconfig files
-	    ├── samples/                    //samples applications
+	    ├── modules/                  //Kconfig files
+	    ├── samples/                  //samples applications
 	    ├── scripts/
 	    ├── share/
 	    ├── snippets/
-	    ├── soc/                        //common soc codes
+	    ├── soc/                      //common soc codes
 	    ├── submanifests/
-	    ├── subsys/                     //sub system
-            └── tests/                      //test specific applications
+	    ├── subsys/                   //sub system
+            └── tests/              //test specific applications
 
 ```
 
 > [!NOTE]  
 > For more information you can refer to the Zephyr **[Application Development](https://docs.zephyrproject.org/latest/develop/application/index.html#overview)** page.
+
+
 _______________________________________________________________
+
 
 # Run an example project
 
@@ -264,8 +283,11 @@ cd zephyrproject
 ```shell
 west build -p always -b nucleo_u575zi zephyr/samples/basic/blinky
 ```
+
+
 > [!NOTE]  
 > You can find all the ST supported board in the folder `.../zephyrproject/zephyr/boards/st/`
+
 
 > [!NOTE]  
 > For more information on the *west* command and its arguments, please visit **[this](https://docs.zephyrproject.org/latest/develop/west/index.html)** page.
@@ -275,7 +297,8 @@ west build -p always -b nucleo_u575zi zephyr/samples/basic/blinky
 west flash
 ```
 
-Now you should see the User LED blinking.\
+**Now you should see the User LED blinking.**
+
 
 ### Troubleshooting
 
