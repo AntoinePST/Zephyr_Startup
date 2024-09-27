@@ -1,252 +1,68 @@
 {
-    "title": "STM32U0 dedicated training 2024",
-    "githubLoc": "https://raw.githubusercontent.com/stm32U0_training_materials/master",
+    "title": "Zephyr Startup",
+    "githubLoc": "https://raw.githubusercontent.com/stm32_Zephyr/master",
     "options": {
       "allowMenu": true,
       "allowTagSelect": false
     },
     "filesToLoadArr": [
       {
-        "name": "CubeIDE",
-        "path": "/lcd",
-        "file": "lcd_cubeide.md"
+        "name": "Software installation required",
+        "path": "/CS",
+        "file": "Software_installation_required.md"
       },
       {
-        "name": "CubeMX",
-        "path": "/lcd",
-        "file": "lcd_cubemx.md"
+        "name": "Proxy Setting",
+        "path": "/CS",
+        "file": "Proxy_Setting.md"
       },
       {
-        "name": "LCD Mapping",
-        "path": "/lcd",
-        "file": "lcd_wiring.md"
+        "name": "Zephyr installation",
+        "path": "/CS",
+        "file": "Zephyr_installation.md"
       },
       {
-        "name": "Create Project",
-        "path": "/lcd",
-        "file": "lcd_project.md"
+        "name": "Zephyr Repository Architecture",
+        "path": "/CS",
+        "file": "Zephyr_Repository_Architecture.md"
       },
       {
-        "name": "Introduction",
-        "path": "/lcd",
-        "file": "lcd_intro.md"
-      },
-      {
-        "name": "CubeIDE",
-        "path": "/lpuart",
-        "file": "lpuart_cubeide.md"
-      },
-      {
-        "name": "CubeMX",
-        "path": "/lpuart",
-        "file": "lpuart_cubemx.md"
-      },
-      {
-        "name": "Create Project",
-        "path": "/lpuart",
-        "file": "lpuart_project.md"
-      },
-      {
-        "name": "Introduction",
-        "path": "/lpuart",
-        "file": "lpuart_intro.md"
-      },
-      {
-        "name": "Introduction",
-        "path": "/standby",
-        "file": "SB_intro.md"
-      },
-      {
-        "name": "CubeMX",
-        "path": "/standby",
-        "file": "SB_cubemx.md"
-      },
-      {
-        "name": "CubeIDE",
-        "path": "/standby",
-        "file": "SB_cubeide.md"
-      },
-      {
-        "name": "Create Project",
-        "path": "/standby",
-        "file": "SB_project.md"
-      },
-      {
-        "name": "Measure Consumption",
-        "path": "/standby",
-        "file": "SB_consumption.md"
-      },
-      {
-        "name": "ADC Theory",
-        "path": "/adc",
-        "file": "adc_theory.md"
-      },
-      {
-        "name": "ADC Basic Example",
-        "path": "/adc",
-        "file": "adc_handson_basic.md"
-      },
-      {
-        "name": "ADC Scan Example",
-        "path": "/adc",
-        "file": "adc_handson_scan.md"
-      },
-      {
-        "name": "ADC DMA Example",
-        "path": "/adc",
-        "file": "adc_handson_dma_circular.md"
-      },
-      {
-        "name": "Introduction",
-        "path": "/shutdown",
-        "file": "SD_intro.md"
-      },
-      {
-        "name": "CubeMX",
-        "path": "/shutdown",
-        "file": "SD_cubemx.md"
-      },
-      {
-        "name": "CubeIDE",
-        "path": "/shutdown",
-        "file": "SD_cubeide.md"
+        "name": "Run an example project",
+        "path": "/CS",
+        "file": "Run_an_example_project.md"
       }
     ],
     "menuStructure": [
 {
       "type": "Folder",
-      "name": "LCD HANDS-ON",
+      "name": "Zephyr_Startup",
       "children": [
         {
           "type": "File",
-          "name": "1. Introduction",
-          "file": "lcd_intro.md"
+          "name": "1. Software installation required",
+          "file": "Software_installation_required.md"
         },
         {
           "type": "File",
-          "name": "2. Create Project",
-          "file": "lcd_project.md"
+          "name": "2. Proxy Setting",
+          "file": "Proxy_Setting.md"
         },
         {
           "type": "File",
-          "name": "3. CubeMX",
-          "file": "lcd_cubemx.md"
+          "name": "3. Zephyr installation",
+          "file": "Zephyr_installation.md"
         },
         {
           "type": "File",
-          "name": "4. LCD Mapping",
-          "file": "lcd_wiring.md"
+          "name": "4. Zephyr Repository Architecture",
+          "file": "Zephyr_Repository_Architecture.md"
         },
         {
           "type": "File",
-          "name": "5. CubeIDE",
-          "file": "lcd_cubeide.md"
+          "name": "5. Run an example projectE",
+          "file": "Run_an_example_project.md"
         }
       ]
     },
-    {
-      "type": "Folder",
-      "name": "ADC HANDS-ON",
-      "children": [
-        {
-          "type": "File",
-          "name": "Theory Basics",
-          "file": "adc_theory.md"
-        },
-        {
-          "type": "File",
-          "name": "1. ADC Basic Example",
-          "file": "adc_handson_basic.md"
-        },
-        {
-          "type": "File",
-          "name": "2. ADC Scan Example",
-          "file": "adc_handson_scan.md"
-        },
-        {
-          "type": "File",
-          "name": "3. ADC with DMA Example",
-          "file": "adc_handson_dma_circular.md"
-        }
-      ]
-    },
-    {
-      "type": "Folder",
-      "name": "LPUART + STOP2 HANDS-ON",
-      "children": [
-        {
-          "type": "File",
-          "name": "1. Introduction",
-          "file": "lpuart_intro.md"
-        },
-        {
-          "type": "File",
-          "name": "2. Create Project",
-          "file": "lpuart_project.md"
-        },
-        {
-          "type": "File",
-          "name": "3. CubeMX",
-          "file": "lpuart_cubemx.md"
-        },
-        {
-          "type": "File",
-          "name": "4. CubeIDE",
-          "file": "lpuart_cubeide.md"
-        }
-      ]
-    },
-    {
-      "type": "Folder",
-      "name": "STANDBY HANDS-ON",
-      "children": [
-        {
-          "type": "File",
-          "name": "1. Introduction",
-          "file": "SB_intro.md"
-        },
-        {
-          "type": "File",
-          "name": "2. Create Project",
-          "file": "SB_project.md"
-        },
-        {
-          "type": "File",
-          "name": "3. CubeMX",
-          "file": "SB_cubemx.md"
-        },
-        {
-          "type": "File",
-          "name": "4. CubeIDE",
-          "file": "SB_cubeide.md"
-        },
-        {
-          "type": "File",
-          "name": "5. Measure Consumption",
-          "file": "SB_consumption.md"
-        }
-      ]
-    },
-    {
-      "type": "Folder",
-      "name": "SHUTDOWN HANDS-ON",
-      "children": [
-        {
-          "type": "File",
-          "name": "1. Introduction",
-          "file": "SD_intro.md"
-        },
-        {
-          "type": "File",
-          "name": "2. CubeMX",
-          "file": "SD_cubemx.md"
-        },
-        {
-          "type": "File",
-          "name": "3. CubeIDE",
-          "file": "SD_cubeide.md"
-        }
-      ]
-    }
     ]
   }

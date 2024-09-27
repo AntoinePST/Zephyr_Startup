@@ -1,3 +1,5 @@
+# Zephyr Startup
+
 This readme is a step-by-step guide that will allow you to install the Zephyr environment on your computer and quickly run an application or sample code. In our case, we will use GitBash as the command terminal for installing and compiling our future Zephyr projects.\
 It is divided into the following parts:
 
