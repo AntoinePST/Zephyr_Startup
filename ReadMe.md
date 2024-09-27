@@ -232,7 +232,7 @@ zephyrproject/                       //WORKSPACE
 	    ├── soc/                        //common soc codes
 	    ├── submanifests/
 	    ├── subsys/                     //sub system
-        └── tests/                      //test specific applications
+            └── tests/                      //test specific applications
 
 ```
 
@@ -283,7 +283,6 @@ If the flash command (*west flash*) doesn't work, verify if CubeProgrammer is ad
 It is needed to put it in first position like this:
 ```c
 board_runner_args(stm32cubeprogrammer "--port=swd" "--reset-mode=hw")
-[...]
+
 include(${ZEPHYR_BASE}/boards/common/stm32cubeprogrammer.board.cmake)
-[...]
 ```
