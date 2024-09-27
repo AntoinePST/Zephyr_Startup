@@ -231,24 +231,24 @@ zephyrproject/                       //WORKSPACE
    ├─── modules/
    ├─── tools/
    └──── zephyr/                      //Zephyr repository application
-	    ├── arch/                     //STM32 core handling related code
-	    ├── boards/                   //all supported board config
-	    ├── cmake/                    //cmake common script
+	    ├── arch/                 //STM32 core handling related code
+	    ├── boards/               //all supported board config
+	    ├── cmake/                //cmake common script
 	    ├── doc/
-	    ├── drivers/                  //Zephyr drivers
-	    ├── dts/                      //device tree for SoCs
+	    ├── drivers/              //Zephyr drivers
+	    ├── dts/                  //device tree for SoCs
 	    ├── include/
-	    ├── kernel/                   //kernel code
-	    ├── lib/                      //built in libraries
+	    ├── kernel/               //kernel code
+	    ├── lib/                  //built in libraries
 	    ├── misc/
-	    ├── modules/                  //Kconfig files
-	    ├── samples/                  //samples applications
+	    ├── modules/              //Kconfig files
+	    ├── samples/              //samples applications
 	    ├── scripts/
 	    ├── share/
 	    ├── snippets/
-	    ├── soc/                      //common soc codes
+	    ├── soc/                  //common soc codes
 	    ├── submanifests/
-	    ├── subsys/                   //sub system
+	    ├── subsys/               //sub system
             └── tests/              //test specific applications
 
 ```
