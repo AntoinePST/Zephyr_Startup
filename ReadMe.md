@@ -16,7 +16,7 @@ This guide was written, among other things, thanks to the Zephyr **[Getting Star
 _______________________________________________________________
 
 
-# 1 - Software installation required
+# 1. Software installation required
 
 To be able to install your Zephyr environment, please **Download & Install** the following dependencies needed & **Add it to PATH** if it is not automatically did during installation. All the installation files are available in the `Zephyr_Startup\installation_files` folder. Please follow these steps:
 
@@ -44,7 +44,7 @@ To be able to install your Zephyr environment, please **Download & Install** the
 _______________________________________________________________
 
 
-# 2 - Proxy Setting
+# 2. Proxy Setting
 
 To install our Zephyr environment, we will need to access remote servers. We must therefore configure the proxy with our username and password to be able to access them.\
 To do this, after installing **Git Bash**, you should find in the path `C:\Users\my_user_name` the file `.bashrc`. This is a script of the Bash command interpreter that Bash executes each time it is started interactively.\
@@ -116,7 +116,7 @@ proxyon
 _______________________________________________________________
 
 
-# 3 - Zephyr installation
+# 3. Zephyr installation
 
 ### Creating of the Zephyr Repository
 
@@ -203,7 +203,7 @@ If asked, answer ```Y``` to *host tools*, ```Y``` to *Zephyr SDK Cmake package*,
 _______________________________________________________________
 
 
-# 4 - Zephyr Repository Architecture
+# 4. Zephyr Repository Architecture
 
 This is a simplified representation of the Zephyr repository architecture:
 
@@ -249,7 +249,7 @@ zephyrproject/                       //WORKSPACE
 	    ├── soc/                  //common soc codes
 	    ├── submanifests/
 	    ├── subsys/               //sub system
-            └── tests/              //test specific applications
+            └── tests/                //test specific applications
 
 ```
 
@@ -260,7 +260,7 @@ zephyrproject/                       //WORKSPACE
 _______________________________________________________________
 
 
-# 5 - Run an example project
+# 5. Run an example project
 
 > [!NOTE]  
 >If you are following this tutorial from the beginning you can skip the first steps. Go directly to step 3.
