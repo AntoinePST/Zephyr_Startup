@@ -4,6 +4,7 @@ It is divided into the following parts:
 - Software installation required
 - Proxy Setting
 - Zephyr installation
+- Zephyr Repository Architecture
 - Run an example project
 
 This guide was written, among other things, thanks to the Zephyr **[Getting Started Guide](https://docs.zephyrproject.org/latest/develop/getting_started/index.html)**.
