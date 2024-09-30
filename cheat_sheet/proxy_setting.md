@@ -43,11 +43,12 @@ cd c:
 #eval $(ssh-agent -s)
 ```
 
-> [!WARNING]
-> Depending on your geographic region, you may need to change the value of the *ProxyIP* parameter on line 6 with a suitable Proxy IP.
+## WARNING
+*Depending on your geographic region, you may need to change the value of the `ProxyIP` parameter on line 6 with a suitable Proxy IP.*
 
 
 In order to verify that your modification works properly, open a GitBash terminal and you should see the following text appear at the top of the terminal:
+
 > Proxy activation
 > $ proxyon
 > $ proxyoff
@@ -59,7 +60,7 @@ You just have to type the following command line and enter your username and pas
 proxyon
 ```
 
-![gif](../img/proxyon.gif)
+![gif](./img/proxyon.gif)
 
-> [!IMPORTANT]  
-> At the end of a Git Bash session, remember to do a `proxyoff` command to clear your login and password that have been temporarily stored by the *.bashrc* script.
+## IMPORTANT  
+*At the end of a Git Bash session, remember to do a `proxyoff` command to clear your login and password that have been temporarily stored by the `.bashrc` script.*

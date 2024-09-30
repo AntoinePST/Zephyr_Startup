@@ -1,7 +1,7 @@
 
 This is a simplified representation of the Zephyr repository architecture:
 
-```
+```c
 zephyrproject/                       //WORKSPACE
    ├─── .venv/                       //Python virtual environments config
    ├─── .west/                       //west config
@@ -47,5 +47,5 @@ zephyrproject/                       //WORKSPACE
 
 ```
 
-> [!NOTE]  
-> For more information you can refer to the Zephyr **[Application Development](https://docs.zephyrproject.org/latest/develop/application/index.html#overview)** page.
+## NOTE  
+*For more information you can refer to the Zephyr* **[Application Development](https://docs.zephyrproject.org/latest/develop/application/index.html#overview)** *page.*
