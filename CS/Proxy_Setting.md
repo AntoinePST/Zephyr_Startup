@@ -59,7 +59,7 @@ You just have to type the following command line and enter your username and pas
 proxyon
 ```
 
-![gif](./img/proxyon.gif)
+![gif](../img/proxyon.gif)
 
 > [!IMPORTANT]  
 > At the end of a Git Bash session, remember to do a `proxyoff` command to clear your login and password that have been temporarily stored by the *.bashrc* script.
