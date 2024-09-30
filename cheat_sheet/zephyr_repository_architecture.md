@@ -1,3 +1,6 @@
+----!
+Presentation
+----!
 
 This is a simplified representation of the Zephyr repository architecture:
 
@@ -5,26 +8,26 @@ This is a simplified representation of the Zephyr repository architecture:
 zephyrproject/                       //WORKSPACE
    ├─── .venv/                       //Python virtual environments config
    ├─── .west/                       //west config
-   │          └─── config
+   │       └─── config
    │
    └─── app1/                        //User application 1
-   │          └── src
-   │          │      └── main.c      //main application file
-   │          │
-   │          ├── CMakeLists.txt     //links the app files directory
-   │          ├── app.overlay        //devicetree overlay specification
-   │          ├── prj.conf           //Kconfig (application-specific values)
-   │          └─── VERSION           //app version info
+   │       └── src
+   │       │      └── main.c      //main application file
+   │       │
+   │       ├── CMakeLists.txt     //links the app files directory
+   │       ├── app.overlay        //devicetree overlay specification
+   │       ├── prj.conf           //Kconfig (application-specific values)
+   │       └─── VERSION           //app version info
    │
    └─── app2/ User application 2
-   │          └── src
-   │          │      └── main.c
-   │          ├── […]
+   │       └── src
+   │       │      └── main.c
+   │       ├── […]
    │
    ├─── build/
    ├─── modules/
    ├─── tools/
-   └──── zephyr/                      //Zephyr repository application
+   └──── zephyr/                //Zephyr repository application
 	    ├── arch/                 //STM32 core handling related code
 	    ├── boards/               //all supported board config
 	    ├── cmake/                //cmake common script
@@ -43,7 +46,7 @@ zephyrproject/                       //WORKSPACE
 	    ├── soc/                  //common soc codes
 	    ├── submanifests/
 	    ├── subsys/               //sub system
-            └── tests/                //test specific applications
+      └── tests/                //test specific applications
 
 ```
 

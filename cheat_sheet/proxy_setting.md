@@ -1,6 +1,11 @@
-To install our Zephyr environment, we will need to access remote servers. We must therefore configure the proxy with our username and password to be able to access them.\
-To do this, after installing **Git Bash**, you should find in the path `C:\Users\my_user_name` the file `.bashrc`. This is a script of the Bash command interpreter that Bash executes each time it is started interactively.\
-\
+----!
+Presentation
+----!
+
+To install our Zephyr environment, we will need to access remote servers. We must therefore configure the proxy with our username and password to be able to access them.
+
+To do this, after installing **Git Bash**, you should find in the path `C:\Users\my_user_name` the file `.bashrc`. This is a script of the Bash command interpreter that Bash executes each time it is started interactively.
+
 Edit this file with a text editor and add the code below:
 
 ```c
@@ -50,7 +55,9 @@ cd c:
 In order to verify that your modification works properly, open a GitBash terminal and you should see the following text appear at the top of the terminal:
 
 > Proxy activation
+
 > $ proxyon
+
 > $ proxyoff
 
 
@@ -60,7 +67,7 @@ You just have to type the following command line and enter your username and pas
 proxyon
 ```
 
-![gif](./img/proxyon.gif)
+![gif](./../img/proxyon.gif)
 
 ## IMPORTANT  
 *At the end of a Git Bash session, remember to do a `proxyoff` command to clear your login and password that have been temporarily stored by the `.bashrc` script.*

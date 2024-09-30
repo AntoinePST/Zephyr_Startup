@@ -1,3 +1,6 @@
+----!
+Presentation
+----!
 
 ## NOTE  
 *If you are following this tutorial from the beginning you can skip the first steps. Go directly to step 3.*
@@ -20,7 +23,7 @@ source zephyrproject/.venv/Scripts/activate
 cd zephyrproject
 ```
 
-`4` - Build the blinky example for the board of your choice (in my case it will be a NUCLEO-U575ZI):
+`4` - Build the blinky example for the board of your choice *(in my case it will be a NUCLEO-U575ZI)*:
 
 ```shell
 west build -p always -b nucleo_u575zi zephyr/samples/basic/blinky
@@ -43,9 +46,10 @@ west flash
 **Now you should see the User LED blinking.**
 
 
-### Troubleshooting
+## Troubleshooting
 
-If the flash command (*west flash*) doesn't work, verify if CubeProgrammer is added in the `boards\st\xxxxxx\board.cmake`.\
+If the flash command (*west flash*) doesn't work, verify if CubeProgrammer is added in the `boards\st\xxxxxx\board.cmake`.
+
 It is needed to put it in first position like this:
 
 ```c

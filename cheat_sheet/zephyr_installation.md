@@ -1,13 +1,17 @@
+----!
+Presentation
+----!
 
 # Creating of the Zephyr Repository
 
-First, start by creating a repository for your Zephyr environment. For my part, it will be `C:/Zephyr_Repo`. Then, change directory to this specific location. You can do that with the following command line:
+First, start by creating a repository for your Zephyr environment. On my side, it will be `C:/Zephyr_Repo`. Then, change directory to this specific location. You can do that with the following command line:
 
 ```shell
 mkdri Zephyr_Repo
 cd Zephyr_Repo
+
 ```
-![gif](./img/zephyr_repo.gif)
+![gif](./../img/zephyr_repo.gif)
 
 
 # Configuring the Zephyr Environment
@@ -65,7 +69,8 @@ pip install -r zephyr/scripts/requirements.txt
 
 # Install the Zephyr SDK
 
-The **Zephyr Software Development Kit (SDK)** contains toolchains for each of Zephyr’s supported architectures, which include a compiler, assembler, linker and other programs required to build Zephyr applications.\
+The **Zephyr Software Development Kit (SDK)** contains toolchains for each of Zephyr’s supported architectures, which include a compiler, assembler, linker and other programs required to build Zephyr applications.
+
 It also contains additional host tools, such as custom QEMU and OpenOCD builds that are used to emulate, flash and debug Zephyr applications.
 
 Download and unzip the **[Zephyr SDK](https://github.com/zephyrproject-rtos/sdk-ng/releases/tag/v0.16.8)** in your Zephyr Repository folder destination.
@@ -77,7 +82,7 @@ Move to the *zephyr-sdk-0.16.8* folder that you just unzipped:
 cd ../zephyr-sdk-0.16.8
 ```
 
-Run the *setup* command to install the Zephyr SDK.\
+Run the *setup* command to install the Zephyr SDK.
 
 If asked, answer ```Y``` to *host tools*, ```Y``` to *Zephyr SDK Cmake package*, ```Y``` for *arm toolchain*, ```N``` to other.
 
@@ -85,8 +90,7 @@ If asked, answer ```Y``` to *host tools*, ```Y``` to *Zephyr SDK Cmake package*,
 ./setup.cmd
 ```
 
-## NOTE  
-**Congratulations, your Zephyr Environment has just been installed!**
+## **Congratulations, your Zephyr Environment has just been installed!**
 
 ## TIP
 *If you want to create another zephyr project, you just need to go back to this guide at the `Configuring the Zephyr Environment` part.*
