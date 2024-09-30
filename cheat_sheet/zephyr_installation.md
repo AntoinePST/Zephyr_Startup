@@ -8,7 +8,7 @@ mkdri Zephyr_Repo
 cd Zephyr_Repo
 
 ```
-![gif](./../img/zephyr_repo.gif)
+![gif](./img/zephyr_repo.gif)
 
 
 # Configuring the Zephyr Environment
