@@ -14,7 +14,7 @@ This guide was written, among other things, thanks to the Zephyr **[Getting Star
 > [!NOTE]
 > Last update October 2024.
 
-
+If you prefere the CheatSheet view, you can **[click here](https://rristm.github.io/tomas_materials_v2/AntoinePST/Zephyr_Startup/master)**.
 _______________________________________________________________
 
 
