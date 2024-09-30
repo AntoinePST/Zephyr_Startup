@@ -1,7 +1,12 @@
 
+-------------------------------------------------
+
 > ## NOTE  
 > *If you are following this tutorial from the beginning you can skip the first steps. Go directly to step 3.*
 >
+
+-------------------------------------------------
+
 
 `1` - Go to your Zephyr Repository:
 
@@ -27,6 +32,9 @@ cd zephyrproject
 west build -p always -b nucleo_u575zi zephyr/samples/basic/blinky
 ```
 
+
+-------------------------------------------------
+
 >
 > ## NOTE  
 > *You can find all the ST supported board in the folder `.../zephyrproject/zephyr/boards/st/`*
@@ -37,6 +45,9 @@ west build -p always -b nucleo_u575zi zephyr/samples/basic/blinky
 > *For more information on the `west` command and its arguments, please visit* **[this](https://docs.zephyrproject.org/latest/develop/west/index.html)** *page.*
 >
 
+-------------------------------------------------
+
+
 `5` - Connect your board and flash the application:
 
 ```shell
@@ -44,6 +55,10 @@ west flash
 ```
 
 **Now you should see the User LED blinking.**
+
+
+
+-------------------------------------------------
 
 
 ## Troubleshooting
