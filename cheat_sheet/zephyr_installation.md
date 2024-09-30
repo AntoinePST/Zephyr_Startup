@@ -1,6 +1,3 @@
-----!
-Presentation
-----!
 
 # Creating of the Zephyr Repository
 

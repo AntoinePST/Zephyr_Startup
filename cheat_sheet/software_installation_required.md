@@ -1,6 +1,3 @@
-----!
-Presentation
-----!
 
 To be able to install your Zephyr environment, please **Download & Install** the following dependencies needed & **Add it to PATH** if it is not automatically did during installation.
 

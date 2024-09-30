@@ -1,6 +1,3 @@
-----!
-Presentation
-----!
 
 This is a simplified representation of the Zephyr repository architecture:
 

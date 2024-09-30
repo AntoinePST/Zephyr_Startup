@@ -1,6 +1,3 @@
-----!
-Presentation
-----!
 
 To install our Zephyr environment, we will need to access remote servers. We must therefore configure the proxy with our username and password to be able to access them.
 

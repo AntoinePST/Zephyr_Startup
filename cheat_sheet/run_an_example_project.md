@@ -1,6 +1,3 @@
-----!
-Presentation
-----!
 
 ## NOTE  
 *If you are following this tutorial from the beginning you can skip the first steps. Go directly to step 3.*
