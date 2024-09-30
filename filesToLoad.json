@@ -8,31 +8,31 @@
     "filesToLoadArr": [
       {
         "name": "Software installation required",
-        "path": "./CS",
+        "path": "/cs",
         "file": "Software_installation_required.md"
       },
       {
         "name": "Proxy Setting",
-        "path": "./CS",
+        "path": "/cs",
         "file": "Proxy_Setting.md"
       },
       {
         "name": "Zephyr installation",
-        "path": "./CS",
+        "path": "/cs",
         "file": "Zephyr_installation.md"
       },
       {
         "name": "Zephyr Repository Architecture",
-        "path": "./CS",
+        "path": "/cs",
         "file": "Zephyr_Repository_Architecture.md"
       },
       {
         "name": "Run an example project",
-        "path": "./CS",
+        "path": "/cs",
         "file": "Run_an_example_project.md"
       }
     ],
-    "menuStructure": [
+    "menuStructure":
 {
       "type": "Folder",
       "name": "Zephyr_Startup",
