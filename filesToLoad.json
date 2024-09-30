@@ -31,5 +31,32 @@
       "path": "/cs",
       "file": "run_an_example_project.md"
     }
+  ],
+  "menuStructure": [
+    {
+      "name": "1. Software installation required",
+      "type": "File",
+      "file": "software_installation_required.md"
+    },
+    {
+      "name": "2. Proxy Setting",
+      "type": "File",
+      "file": "proxy_setting.md"
+    },
+    {
+      "name": "3. Zephyr installation",
+      "type": "File",
+      "file": "zephyr_installation.md"
+    },
+    {
+      "name": "4. Zephyr Repository Architecture",
+      "type": "File",
+      "file": "zephyr_repository_architecture.md"
+    },
+    {
+      "name": "5. Run an example project",
+      "type": "File",
+      "file": "run_an_example_project.md"
+    }
   ]
 }
