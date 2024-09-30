@@ -3,7 +3,9 @@ Presentation
 ----!
 # Creating of the Zephyr Repository
 
-First, start by creating a repository for your Zephyr environment. On my side, it will be `C:/Zephyr_Repo`. Then, change directory to this specific location. You can do that with the following command line:
+First, start by creating a repository for your Zephyr environment. On my side, it will be `C:/Zephyr_Repo`. Then, change directory to this specific location.
+
+You can do that with the following command line:
 
 ```shell
 mkdri Zephyr_Repo
@@ -97,7 +99,6 @@ If asked, answer ```Y``` to *host tools*, ```Y``` to *Zephyr SDK Cmake package*,
 
 -------------------------------------------------
 
->
 > ## TIP
 > *If you want to create another zephyr project, you just need to go back to this guide at the `Configuring the Zephyr Environment` part.*
 >

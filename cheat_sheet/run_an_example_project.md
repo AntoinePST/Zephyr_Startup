@@ -35,7 +35,6 @@ west build -p always -b nucleo_u575zi zephyr/samples/basic/blinky
 
 -------------------------------------------------
 
->
 > ## NOTE  
 > *You can find all the ST supported board in the folder `.../zephyrproject/zephyr/boards/st/`*
 >

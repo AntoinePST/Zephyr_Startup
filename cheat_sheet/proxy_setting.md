@@ -1,3 +1,7 @@
+----!
+Presentation
+----!
+# .bashrc Edition
 
 To install our Zephyr environment, we will need to access remote servers. We must therefore configure the proxy with our username and password to be able to access them.
 
@@ -55,6 +59,8 @@ cd c:
 
 -------------------------------------------------
 
+-------------------------------------------------
+# Proxy Connection
 In order to verify that your modification works properly, open a GitBash terminal and you should see the following text appear at the top of the terminal:
 
 > Proxy activation
