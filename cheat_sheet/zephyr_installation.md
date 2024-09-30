@@ -89,5 +89,7 @@ If asked, answer ```Y``` to *host tools*, ```Y``` to *Zephyr SDK Cmake package*,
 
 ## **Congratulations, your Zephyr Environment has just been installed!**
 
-## TIP
-*If you want to create another zephyr project, you just need to go back to this guide at the `Configuring the Zephyr Environment` part.*
+> 
+> ## TIP
+> *If you want to create another zephyr project, you just need to go back to this guide at the `Configuring the Zephyr Environment` part.*
+>
