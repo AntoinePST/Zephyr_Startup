@@ -1,68 +1,62 @@
 {
-    "title": "Zephyr Startup",
-    "githubLoc": "https://raw.githubusercontent.com/AntoinePST/Zephyr_Startup/master",
-    "options": {
-      "allowMenu": true,
-      "allowTagSelect": false
+  "title": "Zephyr Startup",
+  "githubLoc": "https://raw.githubusercontent.com/AntoinePST/Zephyr_Startup/master",
+  "options": {
+    "allowMenu": true,
+    "allowTagSelect": false
+  },
+  "filesToLoadArr": [
+    {
+      "name": "Software installation required",
+      "path": "/cs",
+      "file": "Software_installation_required.md"
     },
-    "filesToLoadArr": [
-      {
-        "name": "Software installation required",
-        "path": "/cs",
-        "file": "Software_installation_required.md"
-      },
-      {
-        "name": "Proxy Setting",
-        "path": "/cs",
-        "file": "Proxy_Setting.md"
-      },
-      {
-        "name": "Zephyr installation",
-        "path": "/cs",
-        "file": "Zephyr_installation.md"
-      },
-      {
-        "name": "Zephyr Repository Architecture",
-        "path": "/cs",
-        "file": "Zephyr_Repository_Architecture.md"
-      },
-      {
-        "name": "Run an example project",
-        "path": "/cs",
-        "file": "Run_an_example_project.md"
-      }
-    ],
-    "menuStructure":
-{
-      "type": "Folder",
-      "name": "Zephyr_Startup",
-      "children": [
-        {
-          "type": "File",
-          "name": "1. Software installation required",
-          "file": "Software_installation_required.md"
-        },
-        {
-          "type": "File",
-          "name": "2. Proxy Setting",
-          "file": "Proxy_Setting.md"
-        },
-        {
-          "type": "File",
-          "name": "3. Zephyr installation",
-          "file": "Zephyr_installation.md"
-        },
-        {
-          "type": "File",
-          "name": "4. Zephyr Repository Architecture",
-          "file": "Zephyr_Repository_Architecture.md"
-        },
-        {
-          "type": "File",
-          "name": "5. Run an example projectE",
-          "file": "Run_an_example_project.md"
-        }
-      ]
+    {
+      "name": "Proxy Setting",
+      "path": "/cs",
+      "file": "Proxy_Setting.md"
     },
-    ]
-  }
+    {
+      "name": "Zephyr installation",
+      "path": "/cs",
+      "file": "Zephyr_installation.md"
+    },
+    {
+      "name": "Zephyr Repository Architecture",
+      "path": "/cs",
+      "file": "Zephyr_Repository_Architecture.md"
+    },
+    {
+      "name": "Run an example project",
+      "path": "/cs",
+      "file": "Run_an_example_project.md"
+    }
+  ],
+  "menuStructure": [
+    {
+      "type": "File",
+      "name": "1. Software installation required",
+      "file": "Software_installation_required.md"
+    },
+    {
+      "type": "File",
+      "name": "2. Proxy Setting",
+      "file": "Proxy_Setting.md"
+    },
+    {
+      "type": "File",
+      "name": "3. Zephyr installation",
+      "file": "Zephyr_installation.md"
+    },
+    {
+      "type": "File",
+      "name": "4. Zephyr Repository Architecture",
+      "file": "Zephyr_Repository_Architecture.md"
+    },
+    {
+      "type": "File",
+      "name": "5. Run an example projectE",
+      "file": "Run_an_example_project.md"
+    }
+  ]
+}
