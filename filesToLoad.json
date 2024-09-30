@@ -36,27 +36,27 @@
     {
       "type": "File",
       "name": "1. Software installation required",
-      "file": "Software_installation_required.md"
+      "file": "software_installation_required.md"
     },
     {
       "type": "File",
       "name": "2. Proxy Setting",
-      "file": "Proxy_Setting.md"
+      "file": "proxy_Setting.md"
     },
     {
       "type": "File",
       "name": "3. Zephyr installation",
-      "file": "Zephyr_installation.md"
+      "file": "zephyr_installation.md"
     },
     {
       "type": "File",
       "name": "4. Zephyr Repository Architecture",
-      "file": "Zephyr_Repository_Architecture.md"
+      "file": "zephyr_repository_architecture.md"
     },
     {
       "type": "File",
       "name": "5. Run an example projectE",
-      "file": "Run_an_example_project.md"
+      "file": "run_an_example_project.md"
     }
   ]
 }
