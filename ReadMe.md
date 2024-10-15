@@ -39,6 +39,7 @@ To be able to install your Zephyr environment, please **Download & Install** the
 
 ###### 7zip
 - Launch *7z2408-x64.exe*
+- Add `7z` to **PATH**
 
 
 _______________________________________________________________
@@ -48,6 +49,7 @@ _______________________________________________________________
 
 To install our Zephyr environment, we will need to access remote servers. We must therefore configure the proxy with our username and password to be able to access them.\
 To do this, after installing **Git Bash**, you should find in the path `C:\Users\my_user_name` the file `.bashrc`. This is a script of the Bash command interpreter that Bash executes each time it is started interactively.\
+*If this file does not exist, you must create it*.\
 \
 Edit this file with a text editor and add the code below:
 
@@ -123,7 +125,7 @@ _______________________________________________________________
 First, start by creating a repository for your Zephyr environment. For my part, it will be `C:/Zephyr_Repo`. Then, change directory to this specific location. You can do that with the following command line:
 
 ```shell
-mkdri Zephyr_Repo
+mkdir Zephyr_Repo
 cd Zephyr_Repo
 ```
 ![gif](./img/zephyr_repo.gif)
@@ -146,6 +148,12 @@ source zephyrproject/.venv/Scripts/activate
 Install the **West** tool for Zephyr (It will be the swiss-army knife command line tool for all your Zephyr projects):
 ```shell
 pip install west
+```
+
+> [!NOTE]  
+> If after run the pip install west command, a prompt asks you to update pip, you can do so by running the following command:
+```shell
+python.exe -m pip install --upgrade pip
 ```
 
 Initialize the Zephyr project, it will generate a hidden file *.west/config*:
@@ -173,6 +181,10 @@ Install more python tools for Zephyr:
 pip install -r zephyr/scripts/requirements.txt
 ```
 
+Install ninja tools for Zephyr:
+```shell
+pip install ninja
+```
 
 ### Install the Zephyr SDK
 
@@ -282,7 +294,7 @@ cd zephyrproject
 
 `4` - Build the blinky example for the board of your choice (in my case it will be a NUCLEO-U575ZI):
 ```shell
-west build -p always -b nucleo_u575zi zephyr/samples/basic/blinky
+west build -p always -b nucleo_u575zi_q zephyr/samples/basic/blinky
 ```
 
 
