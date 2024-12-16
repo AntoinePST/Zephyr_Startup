@@ -11,8 +11,11 @@ It is divided into the following parts:
 
 This guide was written, among other things, thanks to the Zephyr **[Getting Started Guide](https://docs.zephyrproject.org/latest/develop/getting_started/index.html)**.
 
+> [!IMPORTANT]
+> This guide presents one method to accomplish the task, though other methods exist. You can adapt this approach as you wish. The process outlined here is effective and has been tested successfully.
+
 > [!NOTE]
-> Last update October 2024.
+> Last update December 2024.
 _______________________________________________________________
 
 
@@ -20,6 +23,9 @@ _______________________________________________________________
 
 To be able to install your Zephyr environment, please **Download & Install** the following dependencies needed & **Add it to PATH** if it is not automatically did during installation. All the installation files are available in the `Zephyr_Startup\installation_files` folder. Please follow these steps:
 
+> [!NOTE]
+> The following software installations are a way of doing things and have been verified and approved.\
+> You may optionally keep versions of software that you have already installed Or change the download directory.
 
 ###### GitBash
   - Launch *Git-2.46.1-64-bit.exe* and let all default settings.
@@ -135,6 +141,9 @@ cd Zephyr_Repo
 
 In this part you will find a series of commands needed to configure the Zephyr environment. Before each command line you will find a little description of the command.
 
+> [!NOTE]
+> Some of the following commands may take a while to complete, this is normal.
+
 In a *zephyrproject* folder, create a python environment, it will generate a folder *env-st*:
 ```shell
 python -m venv zephyrproject/.venv
@@ -191,7 +200,7 @@ pip install ninja
 The **Zephyr Software Development Kit (SDK)** contains toolchains for each of Zephyr’s supported architectures, which include a compiler, assembler, linker and other programs required to build Zephyr applications.\
 It also contains additional host tools, such as custom QEMU and OpenOCD builds that are used to emulate, flash and debug Zephyr applications.
 
-Download and unzip the **[Zephyr SDK](https://github.com/zephyrproject-rtos/sdk-ng/releases/tag/v0.16.8)** in your Zephyr Repository folder destination.
+Download and unzip the **[Zephyr SDK](https://github.com/zephyrproject-rtos/sdk-ng/releases/tag/v0.16.8)** in your Zephyr Repository folder destination (`C:/Zephyr_Repo`).
 
 
 Move to the *zephyr-sdk-0.16.8* folder that you just unzipped:
@@ -219,6 +228,9 @@ _______________________________________________________________
 
 This is a simplified representation of the Zephyr repository architecture:
 
+> [!NOTE]  
+> You may have some differences with your repository but this gives you an overview.
+
 ```
 zephyrproject/                       //WORKSPACE
    ├─── .venv/                       //Python virtual environments config
@@ -239,6 +251,7 @@ zephyrproject/                       //WORKSPACE
    │          │      └── main.c
    │          ├── […]
    │
+   ├─── bootloader/
    ├─── build/
    ├─── modules/
    ├─── tools/
@@ -297,6 +310,8 @@ cd zephyrproject
 west build -p always -b nucleo_u575zi_q zephyr/samples/basic/blinky
 ```
 
+> [!NOTE]  
+> This may take some time to build.
 
 > [!NOTE]  
 > You can find all the ST supported board in the folder `.../zephyrproject/zephyr/boards/st/`
