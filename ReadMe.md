@@ -53,28 +53,30 @@ _______________________________________________________________
 
 # 2. Proxy Setting
 
+> [!NOTE]
+> This section is only useful if you need to configure a proxy to access an external network.
+
 To install our Zephyr environment, we will need to access remote servers. We must therefore configure the proxy with our username and password to be able to access them.\
 To do this, after installing **Git Bash**, you should find in the path `C:\Users\my_user_name` the file `.bashrc`. This is a script of the Bash command interpreter that Bash executes each time it is started interactively.\
 *If this file does not exist, you must create it*.\
 \
-Edit this file with a text editor and add the code below:
+Edit this file with a text editor and add the code below (Don't forget to **modify the [YOUR_PROXY_IP]** variable with the IP of your Proxy):
 
-```c
+```python
 function proxyon() {
 echo -n "USERNAME :"
 read -e username
 echo -n "PASSWORD :"
 read -es password
-ProxyIP=lps5.gnb.st.com
+ProxyIP=[YOUR_PROXY_IP] #need to be modified with your Proxy IP
 export proxy_username=${username}
 export proxy_password=${password}
 export proxy=http://${ProxyIP}:8080
 export http_proxy=http://${proxy_username}:${proxy_password}@${ProxyIP}:8080
 export https_proxy=http://${proxy_username}:${proxy_password}@${ProxyIP}:8080
-export http_stmyum_proxy=http://${ProxyIP}:8080
 #git config --global http.proxy http://${proxy_username}:${proxy_password}@${ProxyIP}:8080
 #git config --global http.proxy http://${proxy_username}:${proxy_password}@${ProxyIP}:8080
-echo -e "\nProxy environment variables set (http_proxy, https_proxy, http_stmyum_proxy)."
+echo -e "\nProxy environment variables set (http_proxy, https_proxy)."
 }
 
 function proxyoff() {
@@ -82,8 +84,6 @@ unset HTTP_PROXY
 unset http_proxy
 unset HTTPS_PROXY
 unset https_proxy
-unset http_stmyum_proxy
-unset HTTP_STMYUM_PROXY
 unset FTP_PROXY
 unset ftp_proxy
 unset RSYNC_PROXY
