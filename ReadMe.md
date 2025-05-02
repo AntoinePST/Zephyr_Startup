@@ -95,7 +95,6 @@ echo " Proxy activation"
 echo "   $ proxyon"
 echo "   $ proxyoff"
 
-cd c:
 #eval $(ssh-agent -s)
 ```
 
