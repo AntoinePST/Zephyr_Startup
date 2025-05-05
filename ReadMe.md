@@ -202,9 +202,9 @@ It also contains additional host tools, such as custom QEMU and OpenOCD builds t
 Download and unzip the **[Zephyr SDK](https://github.com/zephyrproject-rtos/sdk-ng/releases/tag/v0.17.0)** in your Zephyr Repository folder destination (`C:/Zephyr_Repo`).
 
 
-Move to the *zephyr-sdk-0.16.8* folder that you just unzipped:
+Move to the *zephyr-sdk-0.17.0* folder that you just unzipped:
 ```shell
-cd ../zephyr-sdk-0.16.8
+cd ../zephyr-sdk-0.17.0
 ```
 
 Run the *setup* command to install the Zephyr SDK.\
