@@ -199,7 +199,7 @@ pip install ninja
 The **Zephyr Software Development Kit (SDK)** contains toolchains for each of Zephyr’s supported architectures, which include a compiler, assembler, linker and other programs required to build Zephyr applications.\
 It also contains additional host tools, such as custom QEMU and OpenOCD builds that are used to emulate, flash and debug Zephyr applications.
 
-Download and unzip the **[Zephyr SDK](https://github.com/zephyrproject-rtos/sdk-ng/releases/tag/v0.16.8)** in your Zephyr Repository folder destination (`C:/Zephyr_Repo`).
+Download and unzip the **[Zephyr SDK](https://github.com/zephyrproject-rtos/sdk-ng/releases/tag/v0.17.0)** in your Zephyr Repository folder destination (`C:/Zephyr_Repo`).
 
 
 Move to the *zephyr-sdk-0.16.8* folder that you just unzipped:
